@@ -24,8 +24,6 @@ public class PhotoFilter {
 
         takeDataFromUser();
 
-        int luminance;
-
         //Loading images from folder
         File dir = new File(fileName);
         File[] directoryListing = dir.listFiles();
@@ -35,8 +33,8 @@ public class PhotoFilter {
                 BufferedImage image = ImageIO.read(new File(fileName+"/"+child.getName()));
                 int width = image.getWidth();
                 int height = image.getHeight();
-                
-                luminance = getLuminance(image, width, height);
+
+                int luminance = getLuminance(image, width, height);
 
                 if (luminance >= cutOffPoint) {
                     renameFile(luminance, child, "dark_");
