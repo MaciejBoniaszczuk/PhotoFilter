@@ -6,17 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d440f162-8dac-4860-b2bb-4f38faab2f6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoFilter/PhotoFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoFilter/PhotoFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/zad.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoFilter/PhotoFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zad.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zad.iml" afterDir="false" />
-    </list>
+    <list default="true" id="d440f162-8dac-4860-b2bb-4f38faab2f6d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +110,7 @@
       <updated>1594053846262</updated>
       <workItem from="1594053849326" duration="5600000" />
       <workItem from="1594142132871" duration="6271000" />
-      <workItem from="1594639091498" duration="8750000" />
+      <workItem from="1594639091498" duration="9054000" />
     </task>
     <servers />
   </component>
