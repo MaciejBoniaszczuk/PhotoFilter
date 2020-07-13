@@ -8,18 +8,21 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.channels.FileChannel;
+import java.util.Scanner;
 
 import org.apache.commons.io.FilenameUtils;
 
 public class PhotoFilter {
 
     //Filename
-    private static String fileName = "bright";
+    private static String fileName;
     //cut off point
-    private static int cutOffPoint = 75;
+    private static int cutOffPoint;
 
 
     public static void main(String[] args) throws IOException {
+
+        takeDataFromUser();
 
         int luminance;
 
@@ -42,6 +45,16 @@ public class PhotoFilter {
                 }
             }
         }
+        System.out.println("Succeed");
+    }
+
+    private static void takeDataFromUser() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Type name of the folder with photos");
+        fileName = scan.nextLine();
+        System.out.println("Set cutOffPoint (suggested: 75)");
+        cutOffPoint = scan.nextInt();
+        scan.nextLine();
     }
 
     private static void renameFile(int luminance, File child, String hue_) throws IOException {
@@ -49,7 +62,6 @@ public class PhotoFilter {
         String extension = FilenameUtils.getExtension(child.getName());
         File newName = new File(basename + "_" + hue_ + luminance + "." + extension);
         copyFile(child,new File("out"+ "/" + newName));
-
     }
 
     private static int getLuminance(BufferedImage image, int width, int height) {
